@@ -16,7 +16,7 @@ angular.module('carCars').directive('myTag', function() {
 	  			'<td ng-click="editModel = !editModel" ng-hide="editModel" >{{ car.Model }}</td>' + 
 	  			'<td ng-show="editModel" >' + '<input ng-blur="editModel = !editModel"  type="text" ng-model="car.Model">' + '</td>' +
 	  			'<td ng-click="editYear = !editYear" ng-hide="editYear">{{ car.Year }}</td>' + 
-	            '<td>' + '<a ng-click="deleteCar($index)" href ="">Delete</a>' + '</td>' +
+	                        '<td>' + '<a ng-click="deleteCar($index)" href ="">Delete</a>' + '</td>' +
 	  			'<td ng-show="editYear" >' + '<input ng-blur="editYear = !editYear"  type="text" ng-model="car.Year">' + '</td>'
   };
 });
