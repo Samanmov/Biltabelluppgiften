@@ -8,5 +8,22 @@ angular.module('carCars').controller('myController', function($scope) {
 	 editLicense:false , editBrand:false, editModel:false,  editYear:false
 	}
 	
-	];	
+	];
+	$scope.addCar = function(){
+		var create = { License:$scope.License, Brand:$scope.Brand, Model:$scope.Model, Year:$scope.Year, 
+					//   editLicense:$scope.false, editBrand:$scope.false, editBrand:$scope.false, editYear:$scope.false
+					 };
+		$scope.cars.push(create);
+		$scope.License = "";
+		$scope.Brand = "";
+		$scope.Model = "";
+		$scope.Year = "";
+	//	$scope.editLicense = "";
+	//	$scope.editBrand = "";
+	//	$scope.editBrand = "";
+	//	$scope.editYear = "";	
+	}
+	$scope.deleteCar = function(d){
+		$scope.cars.splice(d,1);
+	}
 });
