@@ -7,18 +7,16 @@
 </head>	 
 <body ng-app="carCars">
 	<div ng-controller="myController">
-		<h1>Cars</h1>  
+		<h1>Car edit table in AngularJs</h1>  
 		<p>Add new car</p>
-		<label>License: </label><input type="text" ng-model = "License">
+		<label class="label1">License: </label><input type="text" ng-model = "License">
 		<label>Brand: </label><input type="text" ng-model = "Brand">
 		<label>Model: </label><input type="text" ng-model = "Model">
 		<label>Year: </label><input type="text" ng-model = "Year">
-		<input type ="submit" ng-click ="addCar()">
-	
+		<input type ="submit" value="Add" ng-click ="addCar()">
 		<table my-tag>      
 		</table>		
 	</div>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="app.js" type="text/javascript"></script>
 	<script src="myDirective.js" type="text/javascript"></script>

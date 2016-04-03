@@ -6,7 +6,7 @@ angular.module('carCars').directive('myTag', function() {
 	  		  	'<th>License</th>' +
 	  			'<th>Brand</th>' +
 	  			'<th>Model</th>' +
-	  			'<th>Year</th>' +
+	  			'<th>Year</th>' + 
 	  		  '</tr>' +
 	  		  '<tr ng-repeat="car in cars track by $index" >' +
 	  		  	'<td ng-click="editLicense = !editLicense" ng-hide="editLicense" >{{ car.License }}</td>' + 
